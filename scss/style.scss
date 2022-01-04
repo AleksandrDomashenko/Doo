@@ -1,0 +1,276 @@
+//подключение шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+//нулевой стиль
+@import 'nulestyle.scss';
+//файл с миксинами
+@import 'mixin.scss';
+//переменные
+//шаблоны
+
+////////////////////////////////////////
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+// wrapper
+.wrapper {
+  min-height: 100vh; //full screen
+  @include flex(flex, column, none, none);
+}
+// header
+.content {
+  flex: 1 1 auto;
+}
+.header {
+  &__container {
+    max-width: 1238px;
+    margin: 17px auto 32px auto;
+    @include flex(flex, row, space-between, center);
+  }
+
+  &__lists {
+    font-family: Roboto;
+    @include font(11px, 11px, 0.6px, #383938, 500);
+    display: flex;
+
+    a {
+      margin-right: 30px;
+      color: #383938;
+      border-radius: 15px;
+      padding: 15px 20px 0px 20px;
+      &:first-child {
+        color: #000;
+      }
+      &:last-child {
+        margin-right: 15px;
+        background-color: #f5f6f9;
+        padding: 15px 35px;
+      }
+      &:hover {
+        box-shadow: 1px 1px 15px #000;
+      }
+    }
+  }
+}
+
+// first frame
+.first-frame {
+  margin-top: 150px;
+  text-align: center;
+
+  &__title {
+    font-family: Roboto;
+    @include font(70px, 78px, 3.11px, #383938, none);
+  }
+
+  &__downloadapp {
+    margin-top: 56px;
+  }
+
+  &__img {
+    margin-top: 146px;
+    img {
+      max-width: 100vw;
+    }
+  }
+}
+
+// second frame
+.second-frame {
+  margin-top: 250px;
+  &__row {
+    @include flex(flex, none, space-around, center);
+  }
+
+  &__column {
+    @include flex(flex, column, none, flex-start);
+  }
+
+  &__text {
+    margin-top: 35px;
+    font-family: Roboto;
+    @include font(none, 37px, none, #6e6d7a, none);
+  }
+}
+
+// three frame
+.three-frame {
+  text-align: center;
+  margin-top: 250px;
+
+  &__subtitle {
+    margin-top: 25px;
+    margin-bottom: 72px;
+  }
+
+  &__img {
+    background-color: #f0f2fa;
+    padding: 130px 300px;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+}
+.title {
+  font-family: Roboto;
+  @include font(33px, 53px, 1.56px, #383938, none);
+}
+.subtitle {
+  font-family: Roboto;
+  @include font(16px, 29px, none, #6e6d7a, none);
+}
+
+// four frame
+.four-frame {
+  text-align: center;
+  margin-top: 250px;
+
+  &__subtitle {
+    margin-top: 25px;
+    margin-bottom: 72px;
+  }
+
+  &__img {
+    background-color: #f0f2fa;
+    padding: 130px 300px;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+// five frame
+.five-frame {
+  text-align: center;
+  margin-top: 250px;
+
+  &__subtitle {
+    margin-top: 25px;
+    margin-bottom: 72px;
+  }
+
+  &__img {
+    background-color: #f0f2fa;
+    padding: 130px 300px;
+    max-width: 90vw;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+// six frame
+.six-frame {
+  margin-top: 260px;
+  text-align: center;
+
+  &__subtitle {
+    margin-top: 24px;
+  }
+
+  &__img {
+    margin: 72px auto 0 auto;
+    max-width: 1033px;
+    @include flex(flex, none, space-between, none);
+  }
+}
+
+// seven-frame
+.seven-frame {
+  margin-top: 260px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__row {
+    max-width: 90vw;
+    @include flex(flex, none, space-between, none);
+    margin: 78px auto 0 auto;
+    &:last-child {
+      margin-top: 52px;
+    }
+  }
+
+  &__column {
+    @include flex(flex, column, none, flex-start);
+    width: 28vw;
+  }
+
+  &__coltitle {
+    margin-top: 30px;
+    font-family: Roboto;
+    @include font(17px, 33px, none, #383938, none);
+  }
+
+  &__colsubtitle {
+    margin-top: 12px;
+    font-family: Roboto;
+    @include font(9px, 23px, none, #6e6d7a, none);
+  }
+
+  &__button {
+    border: 1px solid #edeef3;
+    border-radius: 8px;
+    padding: 24px 47px;
+    width: 260px;
+    margin: 115px auto 0 auto;
+    p {
+      font-family: Roboto;
+      @include font(12px, 12px, 2.34px, #6e6d7a, none);
+      text-align: center;
+    }
+  }
+}
+
+// eight-frame
+.eight-frame {
+  margin-top: 280px;
+  text-align: center;
+
+  &__downloadapp {
+    margin-top: 25px;
+  }
+
+  &__device {
+    img {
+      max-width: 100vw;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    margin-bottom: 223px;
+  }
+}
+
+// footer
+.footer {
+  &__row {
+    @include flex(flex, none, space-between, flex-start);
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  &__leftside {
+    @include flex(flex, none, space-between, flex-start);
+    min-width: 645px;
+    @include font(11px, 11px, 0.66px, #6e6d7a, none);
+    a {
+      color: #6e6d7a;
+    }
+  }
+
+  &__column {
+    @include flex(flex, column, none, none);
+    li {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__rightside {
+    @include flex(flex, column, none, none);
+    @include font(13px, 23px, none, #6e6d7a, none);
+    img {
+      margin-bottom: 3px;
+    }
+  }
+}
