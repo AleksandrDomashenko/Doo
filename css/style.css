@@ -108,7 +108,6 @@ body {
 }
 
 .header__container {
-  max-width: 1238px;
   margin: 17px auto 32px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,7 +181,8 @@ body {
 }
 
 .first-frame__img img {
-  max-width: 100vw;
+  width: 100%;
+  min-width: 100vw;
 }
 
 .second-frame {
@@ -243,7 +243,7 @@ body {
 .three-frame__img {
   background-color: #f0f2fa;
   padding: 130px 300px;
-  max-width: 90vw;
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -278,7 +278,7 @@ body {
 .four-frame__img {
   background-color: #f0f2fa;
   padding: 130px 300px;
-  max-width: 90vw;
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -295,7 +295,7 @@ body {
 .five-frame__img {
   background-color: #f0f2fa;
   padding: 130px 300px;
-  max-width: 90vw;
+  width: 90vw;
   text-align: center;
   margin: 0 auto;
 }
@@ -426,9 +426,8 @@ body {
 }
 
 .eight-frame__device img {
-  max-width: 100vw;
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 90vw;
+  text-align: center;
 }
 
 .footer__row {

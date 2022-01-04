@@ -19,6 +19,7 @@ body {
 .wrapper {
   min-height: 100vh; //full screen
   @include flex(flex, column, none, none);
+  // border: 1px solid #000;
 }
 // header
 .content {
@@ -26,7 +27,6 @@ body {
 }
 .header {
   &__container {
-    max-width: 1238px;
     margin: 17px auto 32px auto;
     @include flex(flex, row, space-between, center);
   }
@@ -73,7 +73,8 @@ body {
   &__img {
     margin-top: 146px;
     img {
-      max-width: 100vw;
+      width: 100%;
+      min-width: 100vw;
     }
   }
 }
@@ -109,7 +110,7 @@ body {
   &__img {
     background-color: #f0f2fa;
     padding: 130px 300px;
-    max-width: 90vw;
+    width: 90vw;
     margin: 0 auto;
   }
 }
@@ -135,7 +136,7 @@ body {
   &__img {
     background-color: #f0f2fa;
     padding: 130px 300px;
-    max-width: 90vw;
+    width: 90vw;
     margin: 0 auto;
   }
 }
@@ -153,7 +154,7 @@ body {
   &__img {
     background-color: #f0f2fa;
     padding: 130px 300px;
-    max-width: 90vw;
+    width: 90vw;
     text-align: center;
     margin: 0 auto;
   }
@@ -234,9 +235,8 @@ body {
 
   &__device {
     img {
-      max-width: 100vw;
-      margin-left: 100px;
-      margin-right: 100px;
+      width: 90vw;
+      text-align: center;
     }
     margin-bottom: 223px;
   }
